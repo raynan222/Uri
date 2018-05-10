@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main () {
-	int N,i,maiorida,maiorvolta,toggle,sida,svolta,T;
+	unsigned long long int maiorida,maiorvolta,sida,svolta;
+	int T,toggle,i,N;
 	unsigned long long int D, M;
 	char tipo;
 	scanf ("%d",&T);
@@ -36,11 +37,11 @@ int main () {
 					toggle++;
 				}
 		}
-		if (D-sida>maiorida){
-			maiorida=D-sida;
+		if ((D-sida)>maiorida){
+			maiorida=(D-sida);
 		}
-		if (D-svolta>maiorvolta){
-			maiorvolta=D-svolta;
+		if ((D-svolta)>maiorvolta){
+			maiorvolta=(D-svolta);
 		}
 		printf ("Case %d: %llu\n", i+1,(maiorida>maiorvolta?maiorida:maiorvolta));
 	}
