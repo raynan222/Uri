@@ -7,6 +7,7 @@ int main () {
 	scanf ("%d",&T);
 	for (i=0;i<T;i++){
 		scanf ("%d %llu", &N, &D);
+		maiorida=0, maiorvolta=0, toggle=0, sida=0,svolta=0;
 		while (N--){
 			getchar();
 			scanf ("%c-%llu", &tipo, &M);
