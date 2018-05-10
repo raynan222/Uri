@@ -12,11 +12,11 @@ int main () {
 				if (tipo=='B'){
 					if ((M-sida)>maiorida){
 						maiorida=(M-sida);
-						sida=m;
+						sida=M;
 					}
 					if ((M-svolta)>maiorvolta){
 						maiorvolta=(M-svolta);
-						svolta=m;
+						svolta=M;
 					}
 					toggle=0;
 				}
@@ -24,13 +24,13 @@ int main () {
 					if(toggle%2==0){
 						if ((M-svolta)>maiorvolta){
 							maiorvolta=(M-svolta);
-							svolta=m;
+							svolta=M;
 						}
 					}
 					else{
 						if ((M-sida)>maiorida){
 							maiorida=(M-sida);
-							sida=m;
+							sida=M;
 						}
 					}
 					toggle++;
@@ -42,7 +42,7 @@ int main () {
 		if (D-svolta>maiorvolta){
 			maiorvolta=D-svolta;
 		}
-		printf ("Case %d: %llu\n", i+1,(maiorida>maiorvolta?maiorida;maiorvolta));
+		printf ("Case %d: %llu\n", i+1,(maiorida>maiorvolta?maiorida:maiorvolta));
 	}
 	
 	return 0;
