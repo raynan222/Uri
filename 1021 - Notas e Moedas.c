@@ -2,7 +2,7 @@
 int main () {
 	double N,s;
 	int i;
-	float dinheiro [12]={100.00,50.00,20.00,10.00,5.00,2.00,1.00,0.50,0.25,0.10,0.05,0.01};
+	double dinheiro [12]={100.00,50.00,20.00,10.00,5.00,2.00,1.00,0.50,0.25,0.10,0.05,0.01};
 	int contagem [12]={0,0,0,0,0,0,0,0,0,0,0,0};
 	scanf ("%lf", &N);
 	N=N+0.005;
@@ -13,7 +13,7 @@ int main () {
 		}
 	}
 	printf ("NOTAS:\n");
-	for (i=0,s=0;i<=6;i++){
+	for (i=0,s=0;i<=5;i++){
 		printf ("%d nota(s) de R$ %.2lf\n", contagem[i], dinheiro[i]);
 	}
 	printf ("MOEDAS:\n");
