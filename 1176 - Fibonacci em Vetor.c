@@ -20,7 +20,7 @@ int main()
             fibDin(indiceMaisAlto+1, vetFib);
             indiceMaisAlto++;
         }
-        printf("Fib(%d) = %llu\n", indiceDesejado, vetFib[indiceDesejado]);
+        printf("Fib(%llu) = %llu\n", indiceDesejado, vetFib[indiceDesejado]);
     }
     return 0;
 }
