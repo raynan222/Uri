@@ -6,8 +6,9 @@ void fibDin(int indice, long long int vetFib[]);
 int main()
 {
     long long int vetFib[1000]={0,1}, numCaso, indiceDesejado, indiceMaisAlto=1;
+    int i;
     
-    for(int i=2;i<1000;i++){
+    for(i=2;i<1000;i++){
         vetFib[i]=4;
     }
     
