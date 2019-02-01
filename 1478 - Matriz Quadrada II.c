@@ -2,14 +2,14 @@
 
 int main () {
 
-    int linhaColuna,aux1=1,aux2=0,aux3=2;
+    int linhaColuna,aux1=1,aux2=0,aux3=2,i,j;
     
     scanf("%d", &linhaColuna);
     
     while(linhaColuna!=0){
         
-        for(int i=1;i<linhaColuna+1;i++){
-            for(int j=1;j<linhaColuna+1;j++){
+        for(i=1;i<linhaColuna+1;i++){
+            for(j=1;j<linhaColuna+1;j++){
                 if(aux2==0){
                     if(aux1>=101){
                         printf("");
